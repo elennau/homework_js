@@ -1,0 +1,102 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>js Dz 7-8</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jcarousellite.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" href="css/reset.css"> 
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+<div class="carousel__wrapper">
+	<button class="prev">&#171;</button>          
+		<div class="jcarousel">
+	    <ul>
+	        <li><a href="#" title="Дрезден"><img src="img/img_1.jpg" alt="Дрезден"/></a></li>
+	        <li><a href="#" title="Рим"><img src="img/img_2.jpg" alt="Рим"/></a></li>
+	        <li><a href="#" title="Нью-Йорк"><img src="img/img_3.jpg" alt="Нью-Йорк"/></a></li>
+			<li><a href="#" title="Санкт-Петербург"><img src="img/img_4.jpg" alt="Санкт-Петербург"/></a></li>
+	        <li><a href="#" title="Париж"><img src="img/img_5.jpg" alt="Париж"/></a></li>
+	    </ul>                 
+		</div>
+	<button class="next">&#187;</button>            
+</div>
+<div class="select__wrappper">	
+<select class="width-auto">
+	<option>--&#160;&#160;Куда едем отдыхать?&#160;&#160;--</option>
+	<option>Дрезден</option>
+    <option>Рим</option>
+    <option>Нью-Йорк</option>
+    <option>Санкт-Петербург</option>
+    <option>Париж</option>
+</select>
+</div>
+<div class="checkbox__wrappper">	
+<form action="#">
+<div class="chek__box1">
+<span class="niceCheck"><label for="check1">&#8656;jQuery</label><input type="checkbox" id="check1"></span>
+</div>
+<div class="chek__box2">
+<input type="checkbox" id="check2">
+<label for="check2">css&#8658;</label>
+</div>
+</form>
+
+</div>
+<div class="menu__wrapper">
+	<nav class="menu">
+    <ul>
+        <li><a href="#">Nav 1</a></li>
+        <li><a href="#">Nav 2</a></li>
+        <li class="dropdown">
+            <a href="#">Nav 3<span>&#160;&#160;&#160;&#160;&#160;&#160;&#9660;</span></a>
+            <ul class="sub-menu">
+                <li><a href="#">Nav 3.1</a></li>
+                <li class="dropdown">
+                    <a href="#">Nav 3.2<span>&#160;&#160;&#160;&#160;&#160;&#9658;</span></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Nav 3.2.1</a></li>
+                        <li class="dropdown">
+                            <a href="#">Nav 3.2.2<span>&#160;&#160;&#160;&#160;&#9658;</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Nav 3.2.2.1</a></li>
+                                <li><a href="#">Nav 3.2.2.2</a></li>
+								<li><a href="#">Nav 3.2.2.3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav 3.2.3</a></li>
+						<li><a href="#">Nav 3.2.4</a></li>
+                    </ul>
+				</li>
+				<li><a href="#">Nav 3.3</a></li>
+                <li class="dropdown">
+                    <a href="#">Nav 3.4<span>&#160;&#160;&#160;&#160;&#160;&#9658;</span></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Nav 3.4.1</a></li>
+						<li><a href="#">Nav 3.4.2</a></li>
+                        <li class="dropdown">
+                            <a href="#">Nav 3.4.3<span>&#160;&#160;&#160;&#160;&#9658;</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Nav 3.4.3.1</a></li>
+                                <li><a href="#">Nav 3.4.3.2</a></li>
+								<li><a href="#">Nav 3.4.3.3</a></li>
+                            </ul>
+                        </li>
+                       
+						<li><a href="#">Nav 3.4.4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nav 3.5</a></li>
+            </ul>
+        </li>
+       <li><a href="#">Nav 4</a></li>
+	   <li><a href="#">Nav 5</a></li>
+    </ul>
+	</nav>
+</div>
+</body>
+</html>

@@ -1,10 +1,15 @@
-﻿$(document).ready(function(){
-    $(".form").hover(function(){
-        $(this).next('span.help').toggleClass("show");
+﻿$(function(){
+    $('.form').hover(function(){
+        $(this).next('span.help').toggleClass('show',true);
+	},function(){
+		$(this).next('span.help').toggleClass('show',false);
     });
+	$('.button').on('click',function(){
+		$('span.help').toggleClass('show',true);
+	});
 });
 
-$(document).ready(function() {
+$(function() {
 	$('ul.tabs__nav').on('click', 'li:not(.active)', function() {
 		$(this)
 			.addClass('active').siblings().removeClass('active')

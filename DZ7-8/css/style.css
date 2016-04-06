@@ -54,15 +54,10 @@ button {
 }
 
 .show {
+	display:block;
     visibility: visible;
     opacity: 1;
 }
-
-.show {
-	display:block;
-}
-	
-
 
 .tabs {
 	border: 1px solid #666666;
