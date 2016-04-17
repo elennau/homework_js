@@ -1,0 +1,21 @@
+ .wrapper {
+    margin: auto;
+	margin-top: 100px;
+}
+.carousel li {
+    float: left;
+ }
+.arrow__prev, .arrow__next{
+	position: absolute;
+	width: 28px; 
+	height: 36px; 
+	top: 50px; 
+	cursor: pointer; 
+	z-index: 2;
+}
+.arrow__prev {
+	left: 0; 
+}
+.arrow__next {
+	right:0; 
+}

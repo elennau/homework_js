@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>js</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" href="css/reset.css"> 
+	<link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+<script type="text/tmpl" id="head">
+<div class="wrapper">
+	<div class="parent">
+		<div class="box1">
+		<h1><%= data[0]%></h1> 
+		<img src="<%= data[1]%>" alt="">
+		<div class="box2">
+			<p><%= data[2]%></p>
+        </div>
+</script>
+<script type="text/tmpl" id="list">
+		<div class="box2">
+			<p>Хочу изучать Frontend потому что:</p>
+			<ul>
+				<% for ( var i = 0; i < data1.length; i++ ) { %>
+					<li><%=data1[i].item%></li>
+				<% } %>
+			</ul>
+		</div>
+</script>
+<script type="text/tmpl" id="footer">
+		<div class="box2">
+			<p>Мой контактный телефон</p>
+            <p><%=data2[0]%></p>
+            <p>Мой профиль в Фейсбуке</p>
+			<p><a href="<%=data2[1]%>"><%=data2[2]%></a></p>
+		</div>
+		<div class="box3">
+			<p>Мой фидбек:</p>
+            <p><%=data2[3]%></p>
+		</div>
+		</div>
+	</div>
+</div>
+</script>
+</body>
+</html>
