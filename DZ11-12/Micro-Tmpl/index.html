@@ -15,18 +15,18 @@
 <div class="wrapper">
 	<div class="parent">
 		<div class="box1">
-		<h1><%= data[0]%></h1> 
-		<img src="<%= data[1]%>" alt="">
+		<h1><%=dataHead.name%></h1> 
+		<img src="<%=dataHead.img%>" alt="">
 		<div class="box2">
-			<p><%= data[2]%></p>
+			<p><%=dataHead.work%></p>
         </div>
 </script>
 <script type="text/tmpl" id="list">
 		<div class="box2">
 			<p>Хочу изучать Frontend потому что:</p>
 			<ul>
-				<% for ( var i = 0; i < data1.length; i++ ) { %>
-					<li><%=data1[i].item%></li>
+				<% for ( var i = 0; i < dataList.length; i++ ) { %>
+					<li><%=dataList[i].item%></li>
 				<% } %>
 			</ul>
 		</div>
@@ -34,13 +34,13 @@
 <script type="text/tmpl" id="footer">
 		<div class="box2">
 			<p>Мой контактный телефон</p>
-            <p><%=data2[0]%></p>
+            <p><%=dataFoot.tel%></p>
             <p>Мой профиль в Фейсбуке</p>
-			<p><a href="<%=data2[1]%>"><%=data2[2]%></a></p>
+			<p><a href="<%=dataFoot.href%>"><%=dataFoot.prof%></a></p>
 		</div>
 		<div class="box3">
 			<p>Мой фидбек:</p>
-            <p><%=data2[3]%></p>
+            <p><%=dataFoot.feedback%></p>
 		</div>
 		</div>
 	</div>
