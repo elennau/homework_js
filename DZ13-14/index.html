@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>js</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" href="css/reset.css"> 
+	<link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+<script type="text/tmpl" id="test">
+<div class="teser__wrapper">
+		<h1 class="tester__title">Тест по программированию</h1> 
+		<p class="tester__subtitle">В каждом вопросе может быть только один правильный вариант ответа</p>
+		<%for (var i=0; i< data.length; i++) {%>
+		<ol class="tester__block">
+			<li class="tester__quest">
+				<span><%=i+1%>.</span><%=data[i].quest%>
+			</li>
+			<%for (var j=0; j < data[i].answ.length; j++) {%>
+				<li class="tester__answ">
+					<label>
+						<input type="checkbox" name="<%='Box_'+ i%>" id="<%='chBox_'+ i + '_' + j%>">
+						<%=data[i].answ[j].text%>
+					</label>
+				</li> 
+			<%};%>
+		</ol>
+		<%};%>
+<input type="button" class="tester_button" value="Проверить результат">
+<div id="modal_form">
+	<div id="modal_text">
+	</div>
+   <button id="modal_close">Закрыть</button>  
+</div>
+ <div id="overlay"></div>
+</div>
+</script>
+</body>
+</html>
