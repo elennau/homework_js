@@ -1,0 +1,110 @@
+
+body{
+	font-size:15px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+	/* Основной контейнер div */
+	width:100%;
+}
+
+.wrapper_search{
+	height: 55px;
+	background-color: #eee;
+}
+
+h1{
+	display:block;
+	margin-left:20px;
+	float:left;
+	font-size:24px;
+	margin-top:15px;
+}
+
+
+.red_letter,.blue_letter,.yellow_letter,.green_letter{
+	display: inline-block;
+    margin-right: -7px;
+}
+
+.blue_letter{
+	color:blue;
+}
+
+
+.red_letter{
+	color:red;
+}
+
+.yellow_letter{
+	color:yellow;
+}
+
+.green_letter{
+	color:green;
+}
+#searchForm{
+	position:relative;
+	
+}
+
+fieldset{
+	border:none;
+}
+
+#search_text{
+	float:left;
+	margin-top:10px;
+	padding-left: 10px;
+	margin-left:20px;
+	display:inline-block;
+	height:30px;
+	line-height:30px;
+	width:500px;
+	font-size:15px;
+	border:none;
+}
+
+
+#submitButton{
+	display:inline-block;
+	float:left;
+	background-color:#eee;
+	width:120px;
+	height:30px;
+	margin-left:10px;
+	cursor:pointer;
+	margin-top:10px;
+	}
+
+#submitButton:hover{
+	background-position:left bottom;
+}
+
+
+.wrapper_results {
+	width: 500px;
+    margin-left: 120px;	
+}
+
+.wrapper_results li {
+	margin-top: 20px;
+    line-height: 1.2;
+    font-size: 13px;
+    color: #545454;
+}
+
+.wrapper_results li  site {
+	display:block;
+	height:15px;
+	width: 350px;
+	overflow: hidden;
+	color:#006621;
+}
+.wrapper_results li a {
+	display:block;
+	text-decoration: none;
+	color: #1a0dab;
+	 font-size: 18px;
+}
