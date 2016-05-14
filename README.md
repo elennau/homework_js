@@ -1,2 +1,2 @@
 # js
-JS 
+JS and JQuery
