@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>js</title>
+	<script data-main="js/main" src="js/require.js"></script>
+	<link rel="stylesheet" href="css/reset.css"> 
+	<link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+
+<script type="text/template" id="wrapper-template">
+  <div class="wrapper">
+    <div class="controls">
+      <input type="text" class="item__value" placeholder="Какие планы на сегодня?">
+      <button class="item__add">Add</button>
+    </div>
+    <ul class="item__list"></ul>
+  </div>
+</script>  
+
+<script type="text/template" id="list-template">
+  <% for(var i = 0; i < data.length; i++){ %>
+    <li class="item">
+	<span class="item__text item__text--show"><%= data[i] %></span>
+	<input class="item__input item__input--hidden" type="text" value="<%= data[i] %>">
+	<div data-value="<%= data[i] %>" class="item__delete">&#215;</div>
+	</li>
+  <% }; %>
+</script>  
+
+
+</body>
+</html>
