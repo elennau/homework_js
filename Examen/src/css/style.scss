@@ -2,7 +2,7 @@
 
 $white: #ffffff;
 $red:#ff4e50;
-$gray: #ccc;
+$gray: #666666;
 $dark: #333333;
 $img-slider: "../img/slider";
 $img-arrow: "../img/arrow-";
@@ -349,7 +349,7 @@ body {
 	&__text{
 		font-size: 14px;
 		@include font-family();
-		color: $gray;
+		color: #ccc;
 	}
 }
 
@@ -705,6 +705,7 @@ body {
 		width: 300px;
 		height: 120px;
 		margin: 10px auto;
+		background-size: cover;
 		@include border-radius(5px);
 		@include transition(all);
 		&:after{
